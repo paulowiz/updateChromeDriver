@@ -63,12 +63,12 @@ for pasta in pastas:
    if versao == '':
         versao = localiza_versao_chromedriver(path+pasta)
     
-print(versao)
+print('Versão do Google Chorme desse computador é: '+versao)
 lastRelease = requests.get('https://chromedriver.storage.googleapis.com/LATEST_RELEASE_'+versao)
-print(lastRelease.text)
+print('O chrome driver disponivel na internet para essa versão é: '+lastRelease.text)
 baixar_arquivo('https://chromedriver.storage.googleapis.com/'+lastRelease.text+'/chromedriver_win32.zip','chromedriver.zip')
 
-
+print('Donwload do webdriver realizado, fazendo o unzip..... '+lastRelease.text)
 with zipfile.ZipFile('chromedriver.zip', 'r') as zip_ref:
     zip_ref.extractall('')
 
