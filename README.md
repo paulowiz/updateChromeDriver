@@ -2,7 +2,7 @@
 
 ## 📚  Descrição
 
-Projeto Scrapy para pegar dados de um site web e salva no banco de dados.
+Donwload chromedriver from internet with the same version of Local Google Chrome.
 
 ## 🚀 Tecnhologias 
 
